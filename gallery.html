@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <meta name="description" content="ANMACK MINING - Sabi Gold Mine official website" />
+    <link rel="icon" type="image/png" href="/images/logo.jpg" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH572XgK8K0F4z5O7U8N9RzFfD2yM1oBq7S4uI3l7j7t8P6q7q8E2d8K5A3A5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-shell">
+        <a class="brand" href="index.html">
+          <div class="brand-mark">
+            <img src="public/images/logo.jpg" alt="ANMACK MINING logo" loading="lazy" />
+          </div>
+          <div class="brand-copy">
+            <p>ANMACK MINING</p>
+            <small>SABI GOLD MINE</small>
+          </div>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <ul>
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li>
+              <a href="departments.html" class="nav-link">Departments</a>
+            </li>
+            <li>
+              <a href="gallery.html" class="nav-link active">Gallery</a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero gallery-hero">
+        <div class="container hero-body">
+          <p class="eyebrow">Gallery</p>
+          <h1>Scenes from the mine, community, and control rooms</h1>
+          <p>
+            A curated look at ANMACK MINING operations, teams, and the community projects we support
+            across the Midlands Province.
+          </p>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <div class="section-title">
+            <p class="eyebrow">Discover</p>
+            <h2>Company Gallery</h2>
+            <p>Explore our mining operations, events, and milestones.</p>
+          </div>
+
+          <div class="gallery-filter" role="tablist">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="operations">Operations</button>
+            <button class="filter-btn" data-filter="events">Events</button>
+            <button class="filter-btn" data-filter="facilities">Facilities</button>
+            <button class="filter-btn" data-filter="team">Team</button>
+          </div>
+
+          <div class="gallery-grid">
+            <article class="gallery-item" data-category="operations">
+              <img
+                src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80"
+                alt="Open Pit Mining"
+                loading="lazy"
+                class="gallery-img"
+              />
+              <div class="gallery-overlay">
+                <div class="gallery-title">Open Pit Mining</div>
+                <div class="gallery-date">April 2024</div>
+              </div>
+            </article>
+            <article class="gallery-item" data-category="operations">
+              <img
+                src="https://images.unsplash.com/photo-1506220926022-cc5c12acdb35?auto=format&fit=crop&w=900&q=80"
+                alt="Underground Operations"
+                loading="lazy"
+                class="gallery-img"
+              />
+              <div class="gallery-overlay">
+                <div class="gallery-title">Underground Operations</div>
+                <div class="gallery-date">March 2024</div>
+              </div>
+            </article>
+            <article class="gallery-item" data-category="events">
+              <img
+                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80"
+                alt="Safety Awards Ceremony"
+                loading="lazy"
+                class="gallery-img"
+              />
+              <div class="gallery-overlay">
+                <div class="gallery-title">Safety Awards Ceremony</div>
+                <div class="gallery-date">May 2024</div>
+              </div>
+            </article>
+            <article class="gallery-item" data-category="events">
+              <img
+                src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=900&q=80"
+                alt="Community Outreach"
+                loading="lazy"
+                class="gallery-img"
+              />
+              <div class="gallery-overlay">
+                <div class="gallery-title">Community Outreach</div>
+                <div class="gallery-date">February 2024</div>
+              </div>
+            </article>
+            <article class="gallery-item" data-category="facilities">
+              <img
+                src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80"
+                alt="Processing Plant"
+                loading="lazy"
+                class="gallery-img"
+              />
+              <div class="gallery-overlay">
+                <div class="gallery-title">Processing Plant</div>
+                <div class="gallery-date">January 2024</div>
+              </div>
+            </article>
+            <article class="gallery-item" data-category="facilities">
+              <img
+                src="https://images.unsplash.com/photo-1581090460304-9fe5f6d0c09c?auto=format&fit=crop&w=900&q=80"
+                alt="Assay Laboratory"
+                loading="lazy"
+                class="gallery-img"
+              />
+              <div class="gallery-overlay">
+                <div class="gallery-title">Assay Laboratory</div>
+                <div class="gallery-date">December 2023</div>
+              </div>
+            </article>
+            <article class="gallery-item" data-category="team">
+              <img
+                src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=80"
+                alt="Mining Department Team"
+                loading="lazy"
+                class="gallery-img"
+              />
+              <div class="gallery-overlay">
+                <div class="gallery-title">Mining Department Team</div>
+                <div class="gallery-date">June 2024</div>
+              </div>
+            </article>
+            <article class="gallery-item" data-category="team">
+              <img
+                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80"
+                alt="Engineering Collaboration"
+                loading="lazy"
+                class="gallery-img"
+              />
+              <div class="gallery-overlay">
+                <div class="gallery-title">Engineering Collaboration</div>
+                <div class="gallery-date">May 2024</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <div class="footer-brand">
+          <div class="brand-mark footer-logo">
+            <img src="public/images/logo.jpg" alt="ANMACK MINING" loading="lazy" />
+          </div>
+          <p>Leading gold mining excellence rooted in Zimbabwe.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Visit</h4>
+          <p>Sabi Gold Mine, Zvishavane Rutenga Road, Midlands Province</p>
+          <p><a href="tel:+263242740053">+263 242 740053</a></p>
+          <p><a href="mailto:info@sabimine.com">info@sabimine.com</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ANMACK MINING - SABI GOLD MINE. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="scripts/form.js"></script>
+  </body>
+</html>

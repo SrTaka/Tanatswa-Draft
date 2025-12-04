@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <meta name="description" content="ANMACK MINING - Sabi Gold Mine official website" />
+    <link rel="icon" type="image/png" href="/images/logo.jpg" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH572XgK8K0F4z5O7U8N9RzFfD2yM1oBq7S4uI3l7j7t8P6q7q8E2d8K5A3A5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-shell">
+        <a class="brand" href="index.html">
+          <div class="brand-mark">
+            <img src="public/images/logo.jpg" alt="ANMACK MINING logo" loading="lazy" />
+          </div>
+          <div class="brand-copy">
+            <p>ANMACK MINING</p>
+            <small>SABI GOLD MINE</small>
+          </div>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <ul>
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li>
+              <a href="departments.html" class="nav-link">Departments</a>
+            </li>
+            <li>
+              <a href="gallery.html" class="nav-link">Gallery</a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav-link active">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero contact-hero">
+        <div class="container hero-body">
+          <p class="eyebrow">Contact</p>
+          <h1>Let’s build resilient mining operations together</h1>
+          <p>
+            Reach ANMACK MINING for partnerships, supply-chain discussions, or career opportunities.
+            Our team aims to respond within two business days.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-panel" id="contact">
+        <div class="container contact-shell">
+          <div class="contact-card">
+            <h2>Talk to us</h2>
+            <div class="contact-info">
+              <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Sabi Gold Mine, Zvishavane Rutenga Road, Midlands Province, Zimbabwe</p>
+              </div>
+              <div>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+263242740053">+263 242 740053</a>
+              </div>
+              <div>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:info@sabimine.com">info@sabimine.com</a>
+              </div>
+              <div>
+                <i class="fas fa-clock"></i>
+                <p>Monday – Friday · 08:00 – 17:00 CAT</p>
+              </div>
+            </div>
+            <div class="contact-cta">
+              <a
+                class="btn secondary"
+                href="https://www.google.com/maps/dir//Sabi+Gold+Mine,+Zvishavane+Rutenga+Road,+Midlands+Province,+Zimbabwe"
+                target="_blank"
+              >
+                <i class="fas fa-directions"></i> Visit Us
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" method="POST" action="">
+            <input type="hidden" name="_subject" value="New Contact Form Submission - ANMACK MINING" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value="/contact" />
+            <input type="hidden" name="_captcha" value="false" />
+
+            <h3>Send a message</h3>
+            <div class="form-grid">
+              <label>
+                Full Name
+                <input type="text" name="full_name" required />
+              </label>
+              <label>
+                Email Address
+                <input type="email" name="email" required />
+              </label>
+            </div>
+            <label>
+              Subject
+              <input type="text" name="subject" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button type="submit" class="btn primary" id="submitBtn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <div class="footer-brand">
+          <div class="brand-mark footer-logo">
+            <img src="public/images/logo.jpg" alt="ANMACK MINING" loading="lazy" />
+          </div>
+          <p>Leading gold mining excellence rooted in Zimbabwe.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Visit</h4>
+          <p>Sabi Gold Mine, Zvishavane Rutenga Road, Midlands Province</p>
+          <p><a href="tel:+263242740053">+263 242 740053</a></p>
+          <p><a href="mailto:info@sabimine.com">info@sabimine.com</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ANMACK MINING - SABI GOLD MINE. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="scripts/form.js"></script>
+  </body>
+</html>
